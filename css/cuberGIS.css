@@ -439,6 +439,11 @@ button {
     margin-top: 9px;
 }
 
+input[type="checkbox"]:checked{
+    accent-color: #fff;
+    outline: 1px solid #d3d3d3;
+}
+
 .anw4 span{
     position: absolute;
     margin-top: 6.5px;
