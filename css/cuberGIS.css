@@ -83,7 +83,7 @@ button {
     border-radius: 2px;
     background: url(/asset/btn_refresh.png) no-repeat center center;
     position: absolute;
-    top: 17px;
+    top: 20px;
     margin-left: 5px;
 }
 
@@ -199,7 +199,7 @@ button {
 
 .side_nav_open {
     top: 50%;
-    left: 100px;
+    left: 101px;
     width: 22px;
     overflow: hidden;
     height: 120px;

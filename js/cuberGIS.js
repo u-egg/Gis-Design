@@ -121,8 +121,8 @@ function sied_section_slide(){
         $("#side_body").css("width", "0")
         $("#map").css("width", "calc(100vw - 100px)")
         $(".side_body_top div").css("display", "none")
-        $(".side_nav_close").css("left", "100px")
-        $(".side_nav_open").css("left", "100px")
+        $(".side_nav_close").css("left", "101px")
+        $(".side_nav_open").css("left", "101px")
         setTimeout(function() {
             $(".side_nav_close").css("display", "none")
             $(".side_nav_open").css("display", "block")
