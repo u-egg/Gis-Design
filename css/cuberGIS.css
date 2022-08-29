@@ -591,8 +591,6 @@ input[type="checkbox"]:checked{
     height: 100vh;
 }
 
-
-
 .map_top{
     position: relative;
     background-color: #f1f2f3;
@@ -613,6 +611,7 @@ input[type="checkbox"]:checked{
     line-height: 34px;
     color: #666;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .map_top_icon{
