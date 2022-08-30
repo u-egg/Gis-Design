@@ -1,13 +1,14 @@
+//kakao map api
 var container = document.getElementById('map');             //지도를 담을 영역의 DOM 레퍼런스
 var options = {                                             //지도를 생성할 때 필요한 기본 옵션
-    center: new kakao.maps.LatLng(35.158996722331345, 129.16270332333187),   //지도의 중심좌표.
-    level: 5                                                //지도의 레벨(확대, 축소 정도)
+    center: new kakao.maps.LatLng(36.6424341, 127.4890319),   //지도의 중심좌표.
+    level: 11                                                //지도의 레벨(확대, 축소 정도)
 };
 
 var map = new kakao.maps.Map(container, options);           //지도 생성 및 객체 리턴
 
 // 마커 생성
-var markerPosition = new kakao.maps.LatLng(35.158996722331345, 129.16270332333187);
+var markerPosition = new kakao.maps.LatLng(36.6424341, 127.4890319);
 
 
 // 마커를 생성합니다
