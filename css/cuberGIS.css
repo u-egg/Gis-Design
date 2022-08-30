@@ -238,7 +238,7 @@ button {
 }
 
 .side_body_main {
-    height: calc(100% - 170px);
+    height: calc(100vh - 170px);
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -569,9 +569,9 @@ input[type="checkbox"]:checked {
 }
 
 
-.side_body_main .box {
+.box {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-right: 20px;
     width: 310px;
     height: 120px;
     padding: 14px;
@@ -726,3 +726,33 @@ td {
     position: absolute;
     left: 30px;
 }
+
+.menu_on{
+    background-color: #0277bd;
+    color: #fff !important; 
+}
+
+.part_1{
+    display: block;
+}
+
+.part_2{
+    display: none;
+}
+
+.part_3{
+    display: none;
+}
+
+.part_4{
+    display: none;
+}
+
+.part_5{
+    display: none;
+}
+
+.part_6{
+    display: none;
+}
+

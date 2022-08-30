@@ -67,46 +67,47 @@
         <!--side_nav_bar-->
         <section id="side_nav">
             <ul>
-                <li>
+                <li id="menu_btn_1"  onclick="menu_btn_1()" class="menu_on">
                     <i class="fa-solid fa-layer-group" style="font-size: 20px; margin-top: 30px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
                     레이어
                 </li>
-                <li>
+                <li id="menu_btn_2" onclick="menu_btn_2()" class="menu_off">
                     <i class="fa-solid fa-magnifying-glass" style="font-size: 20px; margin-top: 30px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
                     검색
                 </li>
-                <li>
+                <li id="menu_btn_3" onclick="menu_btn_3()" class="menu_off">
                     <i class="fa-solid fa-chart-column" style="font-size: 20px; margin-top: 20px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
                     국토환경성<br>평가등급분석
                 </li>
-                <li>
+                <li id="menu_btn_4" onclick="menu_btn_4()" class="menu_off">
                     <i class="fa-brands fa-autoprefixer" style="font-size: 20px; margin-top: 20px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
                     경사도<br>고도 분석</li>
-                <li>
+                <li id="menu_btn_5" onclick="menu_btn_5()" class="menu_off">
                     <i class="fa-solid fa-map" style="font-size: 20px; margin-top: 20px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
                     토지이용규제<br>정보조회</li>
-                <li>
+                <li id="menu_btn_6" onclick="menu_btn_6()" class="menu_off">
                     <i class="fa-solid fa-clock-rotate-left" style="font-size: 20px; margin-top: 25px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
                     과거자료조회</li>
-
             </ul>
         </section>
         
         <!--side_body-->
         <section id="side_body">
 
+            <!--menu_part_1-->
+            <div class="part_1">
             <!--top-->
             <div class="side_body_top">
                 <h2>소제목</h2>
@@ -262,32 +263,130 @@
                         <div class="div_10px"></div>
                     </form>
                     </div>
-
-                <!--text_box-->
-
-                    <div class="box">
-                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                        <div style="margin-left:14px">
-                            지적분석
-                            <div class="box_text">
-                            분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                            있습니다.
-                            </div>
-                        </div>                        
-                    </div>
-
                </div>
-               
             </div>
 
             <!--bottom-->
             <div class="side_body_bottom" onclick="layerInfo()">
                 <a class="side_body_bottom_btn">선택된 레이어 정보보기</a>
             </div>
+        </div>
+        
+        <!--menu_part_2-->
+        <div class="part_2">
+            검색창만들기
+        </div>  
+        
+        <!--menu_part_3-->
+        <div class="part_3">
+            <div class="side_body_top">
+                <h2>국토환경성평가등급분석</h2>
+            </div>
+            <div class="box" style="margin-top: 20px;">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+            <div class="box">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+            <div class="box">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+            <div class="box">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+        </div>  
+        
+        <!--menu_part_4-->
+        <div class="part_4">
+            <div class="side_body_top">
+                <h2>경사도고도분석</h2>
+            </div>
+            <div class="box" style="margin-top: 20px;">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+            <div class="box">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+            <div class="box">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+            <div class="box">
+                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                <div style="margin-left:14px">
+                    지적분석
+                    <div class="box_text">
+                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                    있습니다.
+                    </div>
+                </div>                        
+            </div>
+        </div>  
+
+        <!--menu_part_5-->
+        <div class="part_5">
+            <div class="side_body_top">
+                <h2>토지이용규제정보조회</h2>
+            </div>
+        </div>  
+
+        <!--menu_part_6-->
+        <div class="part_6">
+            <div class="side_body_top">
+                <h2>과거자료조회</h2>
+            </div>
+        </div>  
+        </section>
 
         <!--side_nav_on/off_btn-->
-
-        </section>
         <a class="side_nav_close" onclick="sied_section_slide();"></a>
         <a class="side_nav_open" onclick="sied_section_slide();"></a>
 

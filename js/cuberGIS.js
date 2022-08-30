@@ -191,3 +191,76 @@ function dragElement(elmnt) {
 function layerInfo(){
     window.open( "./layerInfo.html", "Child", "width=600, height=470, top=220, left=470");
 }
+
+//메뉴 클릭에 따른 창 변경
+function menu_btn_1(){
+    $(".part_1").css("display", "block");
+    $(".part_2").css("display", "none");
+    $(".part_3").css("display", "none");
+    $(".part_4").css("display", "none");
+    $(".part_5").css("display", "none");
+    $(".part_6").css("display", "none");
+
+    $(".menu_on").attr("class",'menu_off');
+    $("#menu_btn_1").attr("class",'menu_on');
+}
+
+function menu_btn_2(){
+    $(".part_1").css("display", "none");
+    $(".part_2").css("display", "block");
+    $(".part_3").css("display", "none");
+    $(".part_4").css("display", "none");
+    $(".part_5").css("display", "none");
+    $(".part_6").css("display", "none");
+
+    $(".menu_on").attr("class",'menu_off');
+    $("#menu_btn_2").attr("class",'menu_on');
+}
+
+function menu_btn_3(){
+    $(".part_1").css("display", "none");
+    $(".part_2").css("display", "none");
+    $(".part_3").css("display", "block");
+    $(".part_4").css("display", "none");
+    $(".part_5").css("display", "none");
+    $(".part_6").css("display", "none");
+
+    $(".menu_on").attr("class",'menu_off');
+    $("#menu_btn_3").attr("class",'menu_on');
+}
+
+function menu_btn_4(){
+    $(".part_1").css("display", "none");
+    $(".part_2").css("display", "none");
+    $(".part_3").css("display", "none");
+    $(".part_4").css("display", "block");
+    $(".part_5").css("display", "none");
+    $(".part_6").css("display", "none");
+
+    $(".menu_on").attr("class",'menu_off');
+    $("#menu_btn_4").attr("class",'menu_on');
+}
+
+function menu_btn_5(){
+    $(".part_1").css("display", "none");
+    $(".part_2").css("display", "none");
+    $(".part_3").css("display", "none");
+    $(".part_4").css("display", "none");
+    $(".part_5").css("display", "block");
+    $(".part_6").css("display", "none");
+
+    $(".menu_on").attr("class",'menu_off');
+    $("#menu_btn_5").attr("class",'menu_on');
+}
+
+function menu_btn_6(){
+    $(".part_1").css("display", "none");
+    $(".part_2").css("display", "none");
+    $(".part_3").css("display", "none");
+    $(".part_4").css("display", "none");
+    $(".part_5").css("display", "none");
+    $(".part_6").css("display", "block");
+
+    $(".menu_on").attr("class",'menu_off');
+    $("#menu_btn_6").attr("class",'menu_on');
+}
