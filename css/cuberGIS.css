@@ -70,13 +70,13 @@ button {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-#top .big_btn{
+#top .big_btn {
     width: 135px;
     font-size: 12px;
     background-color: #fff;
 }
 
-#top .refresh_btn{
+#top .refresh_btn {
     width: 25px;
     height: 25px;
     border: 1px solid #d6d6d6;
@@ -167,7 +167,7 @@ button {
     position: relative;
 }
 
-.side_body_top div{
+.side_body_top div {
     position: absolute;
     padding-top: 12px;
     width: 26px;
@@ -220,6 +220,7 @@ button {
     border-top: 1px solid #ddd;
     background: #fff;
     box-sizing: border-box;
+    display: block;
 }
 
 .side_body_bottom_btn {
@@ -351,7 +352,7 @@ button {
 }
 
 
-.sub_que{
+.sub_que {
     border: 1px solid #ccc;
     width: 265px;
     height: 34px;
@@ -362,7 +363,7 @@ button {
     cursor: pointer;
 }
 
-.sub_anw{
+.sub_anw {
     width: 265px;
     padding: 0 0 0 9px;
     font-size: 13px;
@@ -371,7 +372,7 @@ button {
 }
 
 
-.sub_que2{
+.sub_que2 {
     border: 1px solid #ccc;
     width: 265px;
     height: 34px;
@@ -382,7 +383,7 @@ button {
     cursor: pointer;
 }
 
-.sub_anw2{
+.sub_anw2 {
     width: 265px;
     padding: 0 0 0 9px;
     font-size: 13px;
@@ -390,7 +391,7 @@ button {
     display: none;
 }
 
-.anw2_sub_que{
+.anw2_sub_que {
     border: 1px solid #ccc;
     width: 265px;
     height: 34px;
@@ -401,7 +402,7 @@ button {
     cursor: pointer;
 }
 
-.anw2_sub_anw{
+.anw2_sub_anw {
     width: 265px;
     padding: 0 0 0 9px;
     font-size: 13px;
@@ -411,156 +412,141 @@ button {
 
 }
 
-.anw div input[type="checkbox"]{
+.anw div input[type="checkbox"] {
     width: 16px;
     height: 16px;
     margin-right: 10px;
     margin-top: 9px;
 }
 
-.anw2 input[type="checkbox"]{
+.anw2 input[type="checkbox"] {
     width: 16px;
     height: 16px;
     margin-right: 5px;
     margin-top: 9px;
 }
 
-.anw3 input[type="checkbox"]{
+.anw3 input[type="checkbox"] {
     width: 16px;
     height: 16px;
     margin-right: 5px;
     margin-top: 9px;
 }
 
-.anw4 input[type="radio"]{
+.anw4 input[type="radio"] {
     width: 16px;
     height: 16px;
     margin-right: 10px;
     margin-top: 9px;
 }
 
-input[type="checkbox"]:checked{
+input[type="checkbox"]:checked {
     accent-color: #fff;
     outline: 1px solid #d3d3d3;
 }
 
-.anw4 span{
+.anw4 span {
     position: absolute;
     margin-top: 6.5px;
     cursor: pointer;
 }
 
-.anw3 span{
+.anw3 span {
     position: absolute;
     margin-top: 6.5px;
     cursor: pointer;
 }
 
-.anw2 span{
+.anw2 span {
     position: absolute;
     margin-top: 6.5px;
     cursor: pointer;
 }
 
-.anw span{
+.anw span {
     position: absolute;
     margin-top: 6.5px;
     cursor: pointer;
 }
 
-.img_on{
+.img_on {
     position: absolute;
     right: 20px;
     top: 20px;
     display: block;
 }
 
-.img_off{
+.img_off {
     position: absolute;
     right: 20px;
     top: 20px;
     display: none;
 }
 
-.img_on2{
+.img_on2 {
     position: absolute;
     right: 20px;
     top: 20px;
     display: block;
 }
 
-.img_off2{
+.img_off2 {
     position: absolute;
     right: 20px;
     top: 20px;
     display: none;
 }
 
-.img_on3{
+.img_on3 {
     position: absolute;
     right: 20px;
     top: 20px;
     display: block;
 }
 
-.img_off3{
+.img_off3 {
     position: absolute;
     right: 20px;
     top: 20px;
     display: none;
 }
 
-.img_on4{
+.img_on4 {
     position: absolute;
     right: 20px;
     top: 20px;
     display: block;
 }
 
-.img_off4{
+.img_off4 {
     position: absolute;
     right: 20px;
     top: 20px;
     display: none;
 }
 
-.sub_img_on{
+.sub_img_on {
     position: absolute;
     right: 15px;
     top: 12.5px;
     display: block;
 }
 
-.sub_img_off{
+.sub_img_off {
     position: absolute;
     right: 15px;
     top: 12.5px;
     display: none;
 }
 
-.sub_img_on2{
+.sub_img_on2 {
     position: absolute;
     right: 15px;
     top: 12.5px;
     display: block;
 }
 
-.sub_img_off2{
-    position: absolute;
-    right: 15px;
-    top: 12.5px;
-    display: none;
-}
-
-
-.anw2_sub_img_on{
-    position: absolute;
-    right: 15px;
-    top: 12.5px;
-    display: block;
-}
-
-.anw2_sub_img_off{
+.sub_img_off2 {
     position: absolute;
     right: 15px;
     top: 12.5px;
@@ -568,7 +554,22 @@ input[type="checkbox"]:checked{
 }
 
 
-.side_body_main .box{
+.anw2_sub_img_on {
+    position: absolute;
+    right: 15px;
+    top: 12.5px;
+    display: block;
+}
+
+.anw2_sub_img_off {
+    position: absolute;
+    right: 15px;
+    top: 12.5px;
+    display: none;
+}
+
+
+.side_body_main .box {
     margin: 0 auto;
     margin-top: 50px;
     width: 310px;
@@ -580,7 +581,7 @@ input[type="checkbox"]:checked{
     display: flex;
 }
 
-.box_text{
+.box_text {
     margin: 8px 0 0 0;
     font-size: 13px;
     line-height: 17px;
@@ -591,7 +592,7 @@ input[type="checkbox"]:checked{
     height: 100vh;
 }
 
-.map_top{
+.map_top {
     position: relative;
     background-color: #f1f2f3;
     height: 50px;
@@ -600,7 +601,7 @@ input[type="checkbox"]:checked{
     display: flex;
 }
 
-.map_top select{
+.map_top select {
     width: 130px;
     height: 35px;
     margin-top: 7.5px;
@@ -614,7 +615,7 @@ input[type="checkbox"]:checked{
     cursor: pointer;
 }
 
-.map_top_icon{
+.map_top_icon {
     position: absolute;
     right: 0;
     line-height: 50px;
@@ -622,11 +623,11 @@ input[type="checkbox"]:checked{
     color: #4f6070;
 }
 
-.map_top_icon i{
+.map_top_icon i {
     cursor: pointer;
 }
 
-#layer_select{
+#layer_select {
     width: 500px;
     height: 300px;
     z-index: 9999;
@@ -637,7 +638,7 @@ input[type="checkbox"]:checked{
     border: 1px solid #ccc;
 }
 
-#layer_select_title{
+#layer_select_title {
     height: 46px;
     font-weight: normal;
     padding: 0 20px;
@@ -648,12 +649,12 @@ input[type="checkbox"]:checked{
     cursor: move;
 }
 
-.layer_text{
+.layer_text {
     overflow-y: scroll;
     height: calc(100% - 46px);
 }
 
-.layer_text div{
+.layer_text div {
     height: 30px;
     background: #f5f5f5;
     box-sizing: border-box;
@@ -662,14 +663,66 @@ input[type="checkbox"]:checked{
     padding-left: 20px;
 }
 
-.div_10px{
+.div_10px {
     height: 10px;
 }
 
-.div_20px{
+.div_20px {
     height: 20px;
 }
 
-.div_30px{
+.div_30px {
     height: 30px;
+}
+
+.window_title {
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.window_body {
+    background-color: #eaeaea;
+    width: 560px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #000;
+    color: #666;
+}
+
+.window_body td {
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+}
+
+.window_body table,
+tr,
+th,
+td {
+    border: 1px solid #d9d9d9;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.window_btn{
+    display: flex;
+    padding-left: 175px;
+    padding-top: 20px;
+}
+
+.window_btn button{
+    width: 110px;
+    height: 34px;
+    background-color: #fff;
+    border: #d9d9d9 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.window_btn img{
+    position: absolute;
+    left: 30px;
 }

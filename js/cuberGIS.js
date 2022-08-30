@@ -122,6 +122,8 @@ function sied_section_slide(){
         $("#side_body").css("width", "0")
         $("#map").css("width", "calc(100vw - 100px)")
         $(".side_body_top div").css("display", "none")
+        $(".side_body_bottom").css("display", "none")
+
         $(".side_nav_close").css("left", "101px")
         $(".side_nav_open").css("left", "101px")
         setTimeout(function() {
@@ -136,6 +138,7 @@ function sied_section_slide(){
         $("#map").css("width", "calc(100vw - 450px)")
         setTimeout(function() {
             $(".side_body_top div").css("display", "block")
+            $(".side_body_bottom").css("display", "block")
           }, 200);
         $(".side_nav_close").css("left", "449px")
         $(".side_nav_open").css("left", "449px")
@@ -182,4 +185,9 @@ function dragElement(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
+}
+
+//레이어 정보보기
+function layerInfo(){
+    window.open( "./layerInfo.html", "Child", "width=600, height=470, top=220, left=470");
 }
