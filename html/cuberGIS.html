@@ -30,7 +30,7 @@
 
             <!--title_btn-->
             <div class="title_btn">
-                <button>1:25,000</button>
+                <button style="background-color: #0277bd; color:#fff;">1:25,000</button>
                 <button>1:5,000</button>
                 <button class="big_btn">축적변환 활성화 OFF</button>
                 <button class="refresh_btn"></button>
@@ -67,7 +67,7 @@
         <!--side_nav_bar-->
         <section id="side_nav">
             <ul>
-                <li id="menu_btn_1"  onclick="menu_btn_1()" class="menu_on">
+                <li id="menu_btn_1" onclick="menu_btn_1()" class="menu_on">
                     <i class="fa-solid fa-layer-group" style="font-size: 20px; margin-top: 30px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
@@ -89,301 +89,486 @@
                     <i class="fa-brands fa-autoprefixer" style="font-size: 20px; margin-top: 20px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
-                    경사도<br>고도 분석</li>
+                    경사도<br>고도 분석
+                </li>
                 <li id="menu_btn_5" onclick="menu_btn_5()" class="menu_off">
                     <i class="fa-solid fa-map" style="font-size: 20px; margin-top: 20px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
-                    토지이용규제<br>정보조회</li>
+                    토지이용규제<br>정보조회
+                </li>
                 <li id="menu_btn_6" onclick="menu_btn_6()" class="menu_off">
                     <i class="fa-solid fa-clock-rotate-left" style="font-size: 20px; margin-top: 25px;"></i>
                     <br>
                     <div style="height: 5px;"></div>
-                    과거자료조회</li>
+                    과거자료조회
+                </li>
             </ul>
         </section>
-        
+
         <!--side_body-->
         <section id="side_body">
 
             <!--menu_part_1-->
             <div class="part_1">
-            <!--top-->
-            <div class="side_body_top">
-                <h2>레이어 선택(1)</h2>
-                <div><img src="../asset/panel_refresh.png"></div>
+                <!--top-->
+                <div class="side_body_top">
+                    <h2>레이어 선택(1)</h2>
+                    <div><img src="../asset/panel_refresh.png"></div>
+                </div>
+
+                <!--body-->
+                <div class="side_body_main">
+
+                    <!--accodian_nav-->
+                    <div>
+                        <!--main_que-1-->
+                        <div class="que" style="margin-top: 20px;">
+                            <span>국토환경성평가지도</span>
+                            <img class="img_on" src="../asset/depth_open.png">
+                            <img class="img_off" src="../asset/depth_close.png">
+                        </div>
+
+                        <div class="anw">
+
+                            <!--sub accodian-1-->
+                            <div class="sub_que">
+                                <input type="checkbox">
+                                <span>국토환경성평가지도 결과</span>
+                                <img class="sub_img_on" src="../asset/sub_open.png">
+                                <img class="sub_img_off" src="../asset/sub_close.png">
+                            </div>
+
+                            <div class="sub_anw">
+                                <input type="checkbox" id="sub_anw_1">
+                                <label for="sub_anw_1"><span>국토환경성평가결과</span></label>
+                                <div class="div_10px"></div>
+                                <input type="checkbox" id="sub_anw_2">
+                                <label for="sub_anw_2"><span>법제적평가항목결과</span></label>
+                                <div class="div_10px"></div>
+                                <input type="checkbox" id="sub_anw_3">
+                                <label for="sub_anw_3"><span>환경·생태적평가항목결과</span></label>
+                                <div class="div_20px"></div>
+                            </div>
+
+                            <!--sub accodian-2-->
+                            <div class="sub_que2">
+                                <input type="checkbox">
+                                <span>법제적평가항목</span>
+                                <img class="sub_img_on2" src="../asset/sub_open.png">
+                                <img class="sub_img_off2" src="../asset/sub_close.png">
+                            </div>
+                            <div class="sub_anw2">
+                                <div style="font-size:12px; font-weight:900; margin-top: 5px;">---------------------
+                                    자연환경부문 ---------------------</div>
+                                <input type="checkbox">
+                                <span>01_생태경관보전지역</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>02_시도생태경관보전지역</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>03_자연유보지역</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>04_습지보호지역</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>05_시도습지보호지역</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>06_습지주변관리지역</span>
+                                <div style="font-size:12px; font-weight:900; margin-top: 5px;">----------------------
+                                    물환경부문 ----------------------</div>
+                                <input type="checkbox">
+                                <span>01_생태경관보전지역</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>02_시도생태경관보전지역</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>03_자연유보지역</span>
+                                <div class="div_20px"></div>
+                            </div>
+                            <div class="div_10px"></div>
+                        </div>
+
+                        <!--main_que-2-->
+
+                        <div class="que2">
+                            <span>환경주제도</span>
+                            <img class="img_on2" src="../asset/depth_open.png">
+                            <img class="img_off2" src="../asset/depth_close.png">
+                        </div>
+                        <div class="anw2">
+                            <div class="anw2_sub_que">
+                                <input type="checkbox">
+                                <span>생태자연도</span>
+                                <img class="anw2_sub_img_on" src="../asset/sub_open.png">
+                                <img class="anw2_sub_img_off" src="../asset/sub_close.png">
+                            </div>
+
+                            <div class="anw2_sub_anw">
+                                <input type="checkbox">
+                                <span>테스트 1</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>테스트 2</span>
+                                <div class="div_10px"></div>
+                                <input type="checkbox">
+                                <span>테스트 3</span>
+                                <div class="div_20px"></div>
+                            </div>
+                            <div class="div_10px"></div>
+
+                        </div>
+
+                        <!--main_que-3-->
+
+                        <div class="que3">
+                            <span>행정구역도/도엽도/지적도</span>
+                            <img class="img_on3" src="../asset/depth_open.png">
+                            <img class="img_off3" src="../asset/depth_close.png">
+                        </div>
+                        <div class="anw3">
+                            <input type="checkbox">
+                            <span>행정구역도(시도)</span>
+                            <div class="div_10px"></div>
+                            <input type="checkbox">
+                            <span>행정구역도(시군구)</span>
+                            <div class="div_10px"></div>
+                            <input type="checkbox">
+                            <span>행정구역도(읍면동)</span>
+                            <div class="div_10px"></div>
+                            <input type="checkbox">
+                            <span>25,000도엽도</span>
+                            <div class="div_10px"></div>
+                            <input type="checkbox">
+                            <span>5,000도엽도</span>
+                            <div class="div_10px"></div>
+                            <input type="checkbox">
+                            <span>지적도</span>
+                            <div class="div_20px"></div>
+                        </div>
+
+                        <!--main_que-4-->
+
+                        <div class="que4">
+                            <span>배경지도</span>
+                            <img class="img_on4" src="../asset/depth_open.png">
+                            <img class="img_off4" src="../asset/depth_close.png">
+                            <button>ON</button>
+                        </div>
+                        <div class="anw4">
+                            <form>
+                                <input type="radio" name="map" checked>
+                                <span>Vworld Base</span>
+                                <div class="div_10px"></div>
+                                <input type="radio" name="map">
+                                <span>Vworld Satellite</span>
+                                <div class="div_10px"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--bottom-->
+                <div class="side_body_bottom" onclick="layerInfo()">
+                    <a class="side_body_bottom_btn">선택된 레이어 정보보기</a>
+                </div>
             </div>
 
-            <!--body-->
-            <div class="side_body_main">
+            <!--menu_part_2-->
+            <div class="part_2">
+                <div class="select_menu">
+                    <div id="select_menu_1" class="btn_on" onclick="part_2_nav_1()">통합검색</div>
+                    <div id="select_menu_2" onclick="part_2_nav_2()">지번검색</div>
+                </div>
 
-                <!--accodian_nav-->
-                <div>
-                    <!--main_que-1-->
-                    <div class="que" style="margin-top: 20px;">
-                     <span>국토환경성평가지도</span>
-                     <img class="img_on" src="../asset/depth_open.png">
-                     <img class="img_off" src="../asset/depth_close.png">
+                <!--통합검색 part-->
+                <div class="search_body">
+                    <!--검색 기능 구현 필요-->
+                    <div class="search_que">
+                        <input type="text" placeholder="키워드 입력">
+                        <button>검색</button>
+                        <span>예) 중동, 중동 산1-1, 가야(도엽), 358094(도엽번호)</span>
                     </div>
+                    <div class="search_anw">
+                        <span style="color: #333;">검색결과(총 0건)</span>
 
-                    <div class="anw">
-
-                        <!--sub accodian-1-->
-                        <div class="sub_que">
-                            <input type="checkbox" >
-                            <span>국토환경성평가지도 결과</span>
-                            <img class="sub_img_on" src="../asset/sub_open.png">
-                            <img class="sub_img_off" src="../asset/sub_close.png">
+                        <div class="search_nav">
+                            <div id="nav_btn_1" class="on" onclick="nav_btn_1()">전체</div>
+                            <div id="nav_btn_2" onclick="nav_btn_2()">도엽</div>
+                            <div id="nav_btn_3" onclick="nav_btn_3()">명칭</div>
+                            <div id="nav_btn_4" onclick="nav_btn_4()">행정구역</div>
                         </div>
 
-                        <div class="sub_anw">
-                            <input type="checkbox" id="sub_anw_1">
-                            <label for="sub_anw_1"><span>국토환경성평가결과</span></label>
-                            <div class="div_10px"></div>
-                            <input type="checkbox" id="sub_anw_2">
-                            <label for="sub_anw_2"><span>법제적평가항목결과</span></label>
-                            <div class="div_10px"></div>
-                            <input type="checkbox" id="sub_anw_3">
-                            <label for="sub_anw_3"><span>환경·생태적평가항목결과</span></label>
-                            <div class="div_20px"></div>
+                        <div class="search_result_1">
+                            <span style="color:#333;">도엽(0)</span><br>
+                            검색결과가 없습니다.
+                            <img class="search_result_1_img" onclick="nav_btn_2()" src="../asset/plus.png">
                         </div>
-
-                        <!--sub accodian-2-->
-                        <div class="sub_que2">
-                            <input type="checkbox">
-                            <span>법제적평가항목</span>
-                            <img class="sub_img_on2" src="../asset/sub_open.png">
-                            <img class="sub_img_off2" src="../asset/sub_close.png">
+                        <div class="search_result_2">
+                            <span style="color:#333;">명칭(0)</span><br>
+                            검색결과가 없습니다.
+                            <img class="search_result_2_img" onclick="nav_btn_3()" src="../asset/plus.png">
                         </div>
-                        <div class="sub_anw2">
-                        <div style="font-size:12px; font-weight:900; margin-top: 5px;">--------------------- 자연환경부문 ---------------------</div>
-                            <input type="checkbox">
-                            <span>01_생태경관보전지역</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>02_시도생태경관보전지역</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>03_자연유보지역</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>04_습지보호지역</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>05_시도습지보호지역</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>06_습지주변관리지역</span>
-                        <div style="font-size:12px; font-weight:900; margin-top: 5px;">---------------------- 물환경부문 ----------------------</div>
-                            <input type="checkbox">
-                            <span>01_생태경관보전지역</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>02_시도생태경관보전지역</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>03_자연유보지역</span>
-                            <div class="div_20px"></div>
+                        <div class="search_result_3">
+                            <span style="color:#333;">행정구역(0)</span><br>
+                            검색결과가 없습니다.
+                            <img class="search_result_3_img" onclick="nav_btn_4()" src="../asset/plus.png">
                         </div>
-                        <div class="div_10px"></div>
                     </div>
+                </div>
 
-                    <!--main_que-2-->
+                <!--지번검색 part-->
+                <div class="search_body_2">
+                    <div class="input_area">
+                        지역<br>
+                        <select>
+                            <option>시/도 선택</option>
+                            <option>시/도 선택</option>
+                            <option>시/도 선택</option>
+                        </select><br>
+                        <select>
+                            <option>구/군 선택</option>
+                            <option>시/도 선택</option>
+                            <option>시/도 선택</option>
+                        </select><br>
+                        <select>
+                            <option>읍/면/동 선택</option>
+                            <option>시/도 선택</option>
+                            <option>시/도 선택</option>
+                        </select><br>
+                        <br>
+                        지번<br>
+                        <input type="text" placeholder="본번 입력">
+                        <input type="text" placeholder="부번 입력">
 
-                    <div class="que2">
-                    <span>환경주제도</span>
-                    <img class="img_on2" src="../asset/depth_open.png">
-                    <img class="img_off2" src="../asset/depth_close.png">
-                    </div>
-                    <div class="anw2">
-                        <div class="anw2_sub_que">
-                            <input type="checkbox">
-                            <span>생태자연도</span>
-                            <img class="anw2_sub_img_on" src="../asset/sub_open.png">
-                            <img class="anw2_sub_img_off" src="../asset/sub_close.png">
+                        <div class="search_btn">
+                            검색
                         </div>
+                    </div>
+                    <div class="search_body_2_result">
+                        <span style="color:#333;">검색결과(총0건)</span><br>
+                        <span>검색결과가 없습니다.</span>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="anw2_sub_anw">
-                            <input type="checkbox">
-                            <span>테스트 1</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>테스트 2</span>
-                            <div class="div_10px"></div>
-                            <input type="checkbox">
-                            <span>테스트 3</span>
-                            <div class="div_20px"></div>
+            <!--menu_part_3-->
+            <div class="part_3">
+                <div class="side_body_top">
+                    <h2>국토환경성평가등급분석</h2>
+                </div>
+                <div class="box" style="margin-top: 20px;">
+                    <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                    <div style="margin-left:14px">
+                        지적분석
+                        <div class="box_text">
+                            분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                            있습니다.
                         </div>
-                        <div class="div_10px"></div>
-
                     </div>
-                    
-                    <!--main_que-3-->
-
-                    <div class="que3">
-                    <span>행정구역도/도엽도/지적도</span>
-                    <img class="img_on3" src="../asset/depth_open.png">
-                    <img class="img_off3" src="../asset/depth_close.png">
+                </div>
+                <div class="box">
+                    <img src="https://webgis.neins.go.kr/assets/images/img/rate_shp.png">
+                    <div style="margin-left:14px">
+                        SHP파일 분석
+                        <div class="box_text">
+                            분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                            있습니다.
+                        </div>
                     </div>
-                    <div class="anw3">
-                        <input type="checkbox">
-                        <span>행정구역도(시도)</span>
-                        <div class="div_10px"></div>
-                        <input type="checkbox">
-                        <span>행정구역도(시군구)</span>
-                        <div class="div_10px"></div>
-                        <input type="checkbox">
-                        <span>행정구역도(읍면동)</span>
-                        <div class="div_10px"></div>
-                        <input type="checkbox">
-                        <span>25,000도엽도</span>
-                        <div class="div_10px"></div>
-                        <input type="checkbox">
-                        <span>5,000도엽도</span>
-                        <div class="div_10px"></div>
-                        <input type="checkbox">
-                        <span>지적도</span>
-                        <div class="div_20px"></div>
+                </div>
+                <div class="box">
+                    <img src="https://webgis.neins.go.kr/assets/images/img/rate_draw.png">
+                    <div style="margin-left:14px">
+                        그리기 분석
+                        <div class="box_text">
+                            분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                            있습니다.
+                        </div>
                     </div>
+                </div>
+                <div class="box">
+                    <img src="https://webgis.neins.go.kr/assets/images/img/rate_analy.png">
+                    <div style="margin-left:14px">
+                        지점 분석
+                        <div class="box_text">
+                            분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                            있습니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <!--main_que-4-->
+            <!--menu_part_4-->
+            <div class="part_4">
+                <div class="select_menu">
+                    <div id="select_menu_3" class="btn_on" onclick="part_4_nav_1()">경사도분석</div>
+                    <div id="select_menu_4" onclick="part_4_nav_2()">고도분석</div>
+                </div>
 
+                <!--경사도분석 part-->
+                <div class="part_4_body_1">
+                    <div class="box" style="margin-top: 20px;">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                        <div style="margin-left:14px">
+                            지적분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_shp.png">
+                        <div style="margin-left:14px">
+                            SHP파일 분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_draw.png">
+                        <div style="margin-left:14px">
+                            그리기 분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_analy.png">
+                        <div style="margin-left:14px">
+                            지점 분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--고도분석 part-->
+                <div class="part_4_body_2">
+                    <div class="box" style="margin-top: 20px;">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
+                        <div style="margin-left:14px">
+                            지적분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="box">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_shp.png">
+                        <div style="margin-left:14px">
+                            SHP파일 분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="box">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_draw.png">
+                        <div style="margin-left:14px">
+                            그리기 분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://webgis.neins.go.kr/assets/images/img/rate_analy.png">
+                        <div style="margin-left:14px">
+                            지점 분석
+                            <div class="box_text">
+                                분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
+                                있습니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--menu_part_5-->
+            <div class="part_5">
+                <div class="select_menu">
+                    <div id="select_menu_5" class="btn_on" onclick="part_5_nav_1()">지적분석</div>
+                    <div id="select_menu_6" onclick="part_5_nav_2()">SHP파일분석</div>
+                </div>
+                <div class="part_5_body_1">
                     <div class="que4">
-                    <span>배경지도</span>
-                    <img class="img_on4" src="../asset/depth_open.png">
-                    <img class="img_off4" src="../asset/depth_close.png">
+                        <span>배경지도</span>
+                        <img class="img_on4" src="../asset/depth_open.png">
+                        <img class="img_off4" src="../asset/depth_close.png">
+                        <button>ON</button>
                     </div>
                     <div class="anw4">
                         <form>
-                        <input type="radio" name="map" checked>
-                        <span>Vworld Base</span>
-                        <div class="div_10px"></div>
-                        <input type="radio" name="map">
-                        <span>Vworld Satellite</span>
-                        <div class="div_10px"></div>
-                    </form>
+                            <input type="radio" name="map" checked>
+                            <span>Vworld Base</span>
+                            <div class="div_10px"></div>
+                            <input type="radio" name="map">
+                            <span>Vworld Satellite</span>
+                            <div class="div_10px"></div>
+                        </form>
                     </div>
-               </div>
+                    <div class="info_area">
+                        <span>지번을 선택하여 지번 주변의 토지이용규제정보를 조회 할 수 있습니다.</span>
+                    </div>
+                </div>
+                <div class="part_5_body_2">
+                    <div class="que4">
+                        <span>배경지도</span>
+                        <img class="img_on4" src="../asset/depth_open.png">
+                        <img class="img_off4" src="../asset/depth_close.png">
+                        <button>ON</button>
+                    </div>
+                    <div class="anw4">
+                        <form>
+                            <input type="radio" name="map" checked>
+                            <span>Vworld Base</span>
+                            <div class="div_10px"></div>
+                            <input type="radio" name="map">
+                            <span>Vworld Satellite</span>
+                            <div class="div_10px"></div>
+                        </form>
+                    </div>
+                    <div class="info_area_2">
+                        <span>분석하고자 하는 지역의 WGS84 세계측지계 (EPSG:3857)를 가진 SHP파일을 업로드 하여 토지이용규제정보를 조회 할 수 있습니다.</span>
+                    </div>
+                </div>
+                </div>
             </div>
 
-            <!--bottom-->
-            <div class="side_body_bottom" onclick="layerInfo()">
-                <a class="side_body_bottom_btn">선택된 레이어 정보보기</a>
-            </div>
-        </div>
-        
-        <!--menu_part_2-->
-        <div class="part_2">
-            검색창만들기
-        </div>  
-        
-        <!--menu_part_3-->
-        <div class="part_3">
-            <div class="side_body_top">
-                <h2>국토환경성평가등급분석</h2>
-            </div>
-            <div class="box" style="margin-top: 20px;">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-            <div class="box">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-            <div class="box">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-            <div class="box">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-        </div>  
-        
-        <!--menu_part_4-->
-        <div class="part_4">
-            <div class="side_body_top">
-                <h2>경사도고도분석</h2>
-            </div>
-            <div class="box" style="margin-top: 20px;">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-            <div class="box">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-            <div class="box">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-            <div class="box">
-                <img src="https://webgis.neins.go.kr/assets/images/img/rate_point.png">
-                <div style="margin-left:14px">
-                    지적분석
-                    <div class="box_text">
-                    분석하고자 하는 지적을 입력하여 선택한 지적에 대한 평가 등급별 면적을 조회할 수
-                    있습니다.
-                    </div>
-                </div>                        
-            </div>
-        </div>  
+            <!--menu_part_6-->
+            <div class="part_6">
+                <div class="side_body_top">
+                    <h2>과거자료조회</h2>
+                </div>
+                <div class="part_6_body">
+                    <div class="info_area">
+                        
+                        <img class="img_1" src="../asset/past_info.png">
+                        <span>
+                            선택한 년도의 하반기 자료를 기준으로 제공합니다.</span>
+                        <br>
+                        <span>본 자료는 참고용 자료로 일부 자료에서 오차가 발생할 수 있습니다.</span>
+                        <img class="img_2" src="../asset/past_info.png">
 
-        <!--menu_part_5-->
-        <div class="part_5">
-            <div class="side_body_top">
-                <h2>토지이용규제정보조회</h2>
+                    </div>
+                </div>
             </div>
-        </div>  
-
-        <!--menu_part_6-->
-        <div class="part_6">
-            <div class="side_body_top">
-                <h2>과거자료조회</h2>
-            </div>
-        </div>  
         </section>
 
         <!--side_nav_on/off_btn-->
@@ -391,21 +576,24 @@
         <a class="side_nav_open" onclick="sied_section_slide();"></a>
 
 
-        <!--map-->
 
+
+
+
+
+
+
+
+
+
+
+
+        <!--map-->
         <section>
             <!--map_top_select-->
             <div class="map_top">
                 <select>
-                    <option>test</option>
-                    <option>test</option>
-                    <option>test</option>
-                    <option>test</option>
-                    <option>test</option>
-                </select>
-
-                <select>
-                    <option>test</option>
+                    <option>시/도 선택</option>
                     <option>test</option>
                     <option>test</option>
                     <option>test</option>
@@ -413,13 +601,21 @@
                 </select>
 
                 <select>
-                    <option>test</option>
+                    <option>구/군 선택</option>
                     <option>test</option>
                     <option>test</option>
                     <option>test</option>
                     <option>test</option>
                 </select>
-            <!--map_top_icon-->
+
+                <select>
+                    <option>읍/면/동 선택</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                </select>
+                <!--map_top_icon-->
                 <div class="map_top_icon">
                     <i style="margin-left: 40px;" class="fa-solid fa-layer-group"></i>
                     <i style="margin-left: 40px;" class="fa-solid fa-envelope"></i>
@@ -432,7 +628,7 @@
             <div id="map"></div>
             <script type="text/javascript"
                 src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b9cdea80ea8c388d574f0917aa22d2f1">
-            </script>
+                </script>
             <div id="layer_select">
                 <div id="layer_select_title">레이어 선택 보기 창</div>
                 <div class="layer_text">
@@ -445,7 +641,7 @@
     </article>
 
     <script type="text/javascript" src="../js/cuberGIS.js"></script>
-    
+
 </body>
 
 </html>
