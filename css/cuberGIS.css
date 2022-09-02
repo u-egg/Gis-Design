@@ -981,6 +981,7 @@ td {
     position: absolute;
     right: 50px;
     top: 10px;
+    cursor: pointer;
 }
 
 .part_5 .anw4 {
