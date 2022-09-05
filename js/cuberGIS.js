@@ -376,3 +376,22 @@ function nav_btn_4(){
     $(".search_result_2").css("display", "none");
     $(".search_result_3_img").css("display", "none");
 }
+
+// 버튼 클릭 이벤트
+function map_select_1(){
+    $("#map_select_btn_1").attr("class",'on');
+    $("#map_select_btn_2").attr("class",'');
+    $("#map_select_btn_3").attr("class",'');
+}
+
+function map_select_2(){
+    $("#map_select_btn_2").attr("class",'on');
+    $("#map_select_btn_1").attr("class",'');
+    $("#map_select_btn_3").attr("class",'');
+}
+
+function map_select_3(){
+    $("#map_select_btn_3").attr("class",'on');
+    $("#map_select_btn_1").attr("class",'');
+    $("#map_select_btn_2").attr("class",'');
+}

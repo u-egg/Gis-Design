@@ -1068,6 +1068,28 @@ td {
     margin-bottom: 5px;
 }
 
+.map_select{
+    margin-top: 10px;
+}
+
+.map_select button{
+    border-radius: 4px;
+    background: #d1d5d9;
+    color: #4f6070;
+    width: 95px;
+    height: 44px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: "Noto Sans KR",sans-serif;
+}
+
+.map_select .on{
+    background: #4f6070;
+    color: #fff;
+}
+
 .none{
     display: none;
 }
