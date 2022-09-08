@@ -637,6 +637,7 @@ input[type="checkbox"]:checked {
     right: 100px;
     background-color: #fff;
     border: 1px solid #ccc;
+    display: block;
 }
 
 #layer_select_title {
@@ -1092,4 +1093,11 @@ td {
 
 .none{
     display: none;
+}
+
+#layer_select i{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 15px;
 }

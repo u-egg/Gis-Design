@@ -618,7 +618,7 @@
                 </select>
                 <!--map_top_icon-->
                 <div class="map_top_icon">
-                    <i style="margin-left: 40px;" class="fa-solid fa-layer-group"></i>
+                    <i style="margin-left: 40px;" onclick="layer_select_frame_on()" class="fa-solid fa-layer-group"></i>
                     <i style="margin-left: 40px;" class="fa-solid fa-envelope"></i>
                     <i style="margin-left: 40px;" class="fa-solid fa-floppy-disk"></i>
                     <i style="margin-left: 40px;" class="fa-solid fa-print"></i>
@@ -631,7 +631,9 @@
                 src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b9cdea80ea8c388d574f0917aa22d2f1">
                 </script>
             <div id="layer_select">
-                <div id="layer_select_title">레이어 선택 보기 창</div>
+                <div id="layer_select_title">레이어 선택 보기 창
+                    <span><i class="fa-solid fa-x" onclick="layer_select_frame_off()"></i></span>
+                </div>
                 <div class="layer_text">
                     <div>생태자연도</div>
                 </div>

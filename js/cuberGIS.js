@@ -395,3 +395,13 @@ function map_select_3(){
     $("#map_select_btn_1").attr("class",'');
     $("#map_select_btn_2").attr("class",'');
 }
+
+
+// 레이어 선택 보기 창 이벤트
+function layer_select_frame_on(){
+    $("#layer_select").css("display", "block");
+}
+
+function layer_select_frame_off(){
+    $("#layer_select").css("display", "none");
+}
